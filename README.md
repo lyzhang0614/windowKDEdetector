@@ -1,1 +1,7 @@
 # windowKDEdetector
+
+Here, we propose an online and unsupervised anomaly detection algorithm for streaming data using an array of sliding windows and the probability density-based descriptors (based on these windows). This algorithm mainly consists of three steps: first, we use a main sliding window over streaming data and segment this window into an array of non-overlapping sub-windows; then, we propose our probability density-based descriptors with dimension reduction, based on kernel density estimation (KDE), to estimate the probability density of data in each sub-window; finally, we design the distance-based anomaly detection rule to determine whether the current observation is anomalous. Experimental results and performances are presented based on the Numenta Anomaly Benchmark (NAB), which is a benchmark containing real-world streaming data with labeled anomalies. Compared with the anomaly detection algorithm using Hierarchical Temporal Memory (HTM) proposed by Numenta (which outperforms a wide range of other anomaly detection algorithms), our algorithm can perform better in most cases.
+
+1. The code file "WindowKDE_detector.py" should run on the platform called Numnta Anomaly Benchmark, whose detailed installation requirements can be seen in: https://github.com/numenta/NAB.
+
+2. The data files have been experimented using our algorithm and readers can actually try the same values we set on the same datasets.
